@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+</head>
+<body >
+
+
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg bg-transparent  fixed-top mt-2" id="navbar-spy">
+    <div class="container">
+      <a class="logo navbar-brand" href="#">DANIELS</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#works">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#client">Client</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Team</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- //////////////////////////////////////////////////////////////////////// -->
+ 
+    <!--home-->
+
+    <header id="home d-flex" class="d-flex align-items-center justify-content-center">
+        <div class="content text-center text-white">
+            <h5 >Hello</h5>
+            
+            <h1 class="main-title">I Am <span id="mainTitle"></span></h1>
+
+            <ul class="d-flex gap-1 list-unstyled align-items-center justify-content-center mt-5 ">
+              <li>
+                <a href="#"><i class="fa-brands fa fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa fa-behance"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa fa-youtube-square"></i></a>
+              </li>
+            </ul>
+        </div>
+    </header>
+   
+  
+
+     <!-- about -->
+     <section class="about  py-5" id="about">
+      <div class="container py-5">
+        <div class="row ">
+     
+          <div class="col-md-5 ">
+            <div class="hero-img">
+              <img class="w-100"  src="./images/hero.jpg" alt="">
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 justify-content-center align-items-center ">
+            <h3>About Me.</h3>
+            <span class="sub-title">UI / UX Designer &amp; Web Developer</span>
+            <p>
+              I am <b>Jerry Daniels</b> Lorem Ipsum is simply dummy text of
+              the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever It has survived not only
+              five centuries, but also the leap into electronic but also the
+              leap into electronic typesetting, remaining essentially
+              unchanged. It was popularised in the 1960s with the release of
+              Letraset sheets containing
+            </p>
+
+            <div class="container">
+              <div class="row">
+                  <div class="col-12 mb-3">
+                      <div class="progress-container">
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                  <span class="label">Web Design</span>
+                                  <span class="percentage">95%</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 mb-3">
+                      <div class="progress-container">
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                  <span class="label">Branding</span>
+                                  <span class="percentage">80%</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 mb-3">
+                      <div class="progress-container">
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                  <span class="label">Development</span>
+                                  <span class="percentage">90%</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="button-container text-center mt-4">
+            <button class="btn btn-custom btn-download">Download C.V</button>
+            <button class="btn btn-custom btn-contact">Contact Me</button>
+        </div>
+        
+        
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+
+
+    </section>
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+ 
+ <!-- services -->
+    <section class="services section-padding bg-gray text-center pb-70 ">
+      <div class="head mx-auto ">
+        <h3>Services.</h3>
+      </div>
+     <div class="container">
+      <div class="row ">
+       
+        <div class="col-md-4" >
+          <div class="item">
+            <span class="icon"><i class="fa fa-laptop" aria-hidden="true"></i></span>
+            <h6>Web Design</h6>
+            <p>
+              Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+              industry's standard dummy text ever
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4" >
+          <div class="item">
+            <span class="icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+            <h6>Branding</h6>
+            <p>
+              Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+              industry's standard dummy text ever
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4" >
+          <div class="item">
+            <span class="icon"><i class="fa fa-umbrella" aria-hidden="true"></i></span>
+            <h6>Web Design</h6>
+            <p>
+              Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+              industry's standard dummy text ever
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4" >
+          <div class="item">
+            <span class="icon"><i class="fa fa-diamond" aria-hidden="true"></i></span>
+            <h6>Web Design</h6>
+            <p>
+              Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+              industry's standard dummy text ever
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4" >
+          <div class="item">
+            <span class="icon"><i class="fa fa-camera" aria-hidden="true"></i></span>
+            <h6>Web Design</h6>
+            <p>
+              Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+              industry's standard dummy text ever
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4" >
+          <div class="item">
+            <span class="icon"><i class="fa fa-laptop" aria-hidden="true"></i></span>
+            <h6>Web Design</h6>
+            <p>
+              Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+              industry's standard dummy text ever
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+     </div>
+
+
+    </section>
+
+  <!-- //////////////////////////////////////////////////////////////////////// -->
+
+
+  
+    <!--portfolios-->
+    <section id="portfolio" class="py-5">
+
+      <div class="container w-75 m-auto py-5">
+          <div class="d-flex justify-content-center">
+
+            <div class="head mx-auto ">
+              <h3>Portfolio.</h3>
+            </div>
+          
+          </div>
+
+
+          <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item position-relative" role="presentation">
+                <button class="nav-link fw-semibold active" id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="true">All</button>
+              </li>
+              <li class="nav-item position-relative" role="presentation">
+                <button class="nav-link fw-semibold" id="pills-Brands-tab" data-bs-toggle="pill" data-bs-target="#pills-Brands" type="button" role="tab" aria-controls="pills-Brands" aria-selected="false">Brands</button>
+              </li>
+              <li class="nav-item position-relative" role="presentation">
+                <button class="nav-link fw-semibold" id="pills-Design-tab" data-bs-toggle="pill" data-bs-target="#pills-Design" type="button" role="tab" aria-controls="pills-Design" aria-selected="false">Design</button>
+              </li>
+              <li class="nav-item position-relative" role="presentation">
+                <button class="nav-link fw-semibold" id="pills-Graphics-tab" data-bs-toggle="pill" data-bs-target="#pills-Graphics" type="button" role="tab" aria-controls="pills-Graphics" aria-selected="false">Graphics</button>
+              </li>
+              
+            </ul>
+          <div class="tab-content d-flex justify-content-center" id="pills-tabContent">
+              
+              <div class="tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab" tabindex="0">
+
+                  <div class="row py-3 g-4">
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/1.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" data-toggle="modal" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <button type="button" class="btn btn-unstyled" data-toggle="modal" data-target="#exampleModalCenter">
+                                              <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/2.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <button type="button" class="btn btn-unstyled" data-toggle="modal" data-target="#exampleModalCenter">
+                                              <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                          </button>                                        </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/3.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <button type="button" class="btn btn-unstyled" data-toggle="modal" data-target="#exampleModalCenter">
+                                              <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                          </button>                                        </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/4.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <button type="button" class="btn btn-unstyled" data-toggle="modal" data-target="#exampleModalCenter">
+                                              <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/5.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <button type="button" class="btn btn-unstyled" data-toggle="modal" data-target="#exampleModalCenter">
+                                              <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                          </button>                                        </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/6.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <button type="button" class="btn btn-unstyled" data-toggle="modal" data-target="#exampleModalCenter">
+                                              <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                          </button>                                        </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+
+
+              <div class="tab-pane fade" id="pills-Brands" role="tabpanel" aria-labelledby="pills-Brands-tab" tabindex="0">
+
+                  <div class="row py-3 g-4">
+
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/2.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/5.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+
+                  </div>
+
+              </div>
+
+
+
+              <div class="tab-pane fade" id="pills-Design" role="tabpanel" aria-labelledby="pills-Design-tab" tabindex="0">
+
+                  <div class="row py-3 g-4">
+
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/6.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/1.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+
+
+              <div class="tab-pane fade" id="pills-Graphics" role="tabpanel" aria-labelledby="pills-Graphics-tab" tabindex="0">
+
+                  <div class="row py-3 g-4">
+
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/3.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/5.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 ">
+                          <div class="inner position-relative">
+                              <img src="./images/2.jpg" class="w-100" alt="work1">
+                              <div class="content">
+                                  <h4 class="h6 text-center">WEB DESIGN
+                                  </h4>
+                                  <div class="icons d-flex col-gap-1 justify-content-center align-items-center">
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-chain-broken" aria-hidden="true"></i>
+                                      </div>
+                                      <div class="stack-small d-flex justify-content-center align-items-center rounded-circle">
+                                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="overlay"></div>
+
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+
+
+          </div>
+      </div>
+
+
+        
+  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="client bg-light py-5" id="client">
+    <div class="container py-5">
+      <div class="title text-center pb-5">
+        <h2 class = "text-black fw-bold">Testimonials.</h2>
+      </div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="text-center mb-5">
+            
+
+              <img
+                src="./images/firstPerson.jpg"
+                class="d-block my-2  rounded-circle m-auto carousel-image"
+                alt="..."
+              />
+              <p class="text-muted p-client w-75 m-auto">
+                "Lorem Ipsum has been the industry's standard dummy text ever
+                since the when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book."
+              </p>
+              <br>
+              <h6>Alex Smith</h6>
+              <span>Envato Customer</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center mb-5">
+            
+              <img
+                src="./images/firstPerson.jpg"
+                class="d-block my-2  rounded-circle m-auto carousel-image"
+                alt="..."
+              />
+              <p class="text-muted p-client">
+                "Lorem Ipsum has been the industry's standard dummy text ever
+                since the when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book."
+              </p>
+              <br>
+              <h6>Alex Smith</h6>
+              <span>Envato Customer</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center mb-5">
+            
+              <img
+                src="./images/firstPerson.jpg"
+                class="d-block my-2  rounded-circle m-auto carousel-image"
+                alt="..."
+              />
+              <p class="text-muted p-client">
+                "Lorem Ipsum has been the industry's standard dummy text ever
+                since the when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book."
+              </p>
+              <br>
+              <h6>Alex Smith</h6>
+              <span>Envato Customer</span>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="numbers section-padding text-center pb-70">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-3">
+          <div class="item">
+            <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+            <h3 class="counter">850</h3>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="item">
+            <span class="icon"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+            <h3 class="counter">230</h3>
+            <p>Complete Projects</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="item">
+            <span class="icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
+            <h3 class="counter">9450</h3>
+            <p>Lines Of Code</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="item">
+            <span class="icon"><i class="fa fa-cloud-download" aria-hidden="true"></i></span>
+            <h3 class="counter">780</h3>
+            <p>Files Downloaded</p>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+ 
+  </div>
+
+
+
+
+  
+   <!-- contact -->
+   <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-header">
+        <h2>Contact Us.</h2>
+      </div>
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="icon"><img src="address-icon.png" alt="Address Icon"></div>
+          <h3>Address</h3>
+          <p>6834 Hollywood Blvd - Los Angeles CA</p>
+        </div>
+        <div class="info-item">
+          <div class="icon"><img src="email-icon.png" alt="Email Icon"></div>
+          <h3>Email</h3>
+          <p>Support@website.com</p>
+        </div>
+        <div class="info-item">
+          <div class="icon"><img src="phone-icon.png" alt="Phone Icon"></div>
+          <h3>Phone</h3>
+          <p>+20 010 2517 8918</p>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Name" name="name">
+          <input type="email" placeholder="Email" name="email">
+          <textarea placeholder="Message" name="message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+
+<!--js-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+     <!-- type.js -->
+     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <script>
+       var typed = new Typed('#mainTitle', {
+         strings: ['Larry Daniels', ' Developer','Designer'],
+         typeSpeed: 100,
+         loop: true,
+         loopCount: Infinity,
+         backSpeed: 50,
+        
+
+       });
+     </script>
+</body>
+</html>

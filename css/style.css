@@ -1,0 +1,460 @@
+/*global*/
+
+
+:root{
+    --mainColor:#1C1C1C;
+    --whiteColor:white ;
+    
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    text-underline-offset: 4px;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;  
+    
+}
+
+.logo{
+  float: left;
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+h5 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: lighter;
+    
+}
+
+h3{
+  font-weight: 900;
+    font-size: 40px;
+}
+
+/* navbar */
+
+nav  .nav-link{
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    color: #fff;
+}
+nav li:hover .nav-link{
+  
+    text-decoration:   #fff !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: var(--whiteColor);
+    text-decoration: underline var(--whiteColor) !important;
+  
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*home*/
+
+
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)) ,  url(../images/bg.jpg);  
+  height: 100vh;
+  background-position: center;
+  
+  background-size:cover ;
+}
+header .main-title{
+    font-size: 60px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+header ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--whiteColor);
+    text-decoration: none;
+    background-color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.progress-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px; /* Ensures spacing between bars */
+}
+
+.progress {
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15) inset;
+    height: 20px; /* Reduced height for a thinner bar */
+    width: 100%; /* Full width */
+}
+
+.progress-bar {
+    background-color: #1c1c1c;
+    transition: width 1s;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; /* Adjust content distribution */
+    align-items: center; /* Vertical centering */
+    color: #fff;
+    font-size: 14px; /* Adjust font size as needed */
+    padding: 0 10px; /* Padding inside the bar */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    position: relative; /* Ensures positioning is relative to parent */
+}
+
+.label {
+    /* Label for the skill, e.g., Web Design */
+    position: absolute;
+    left: 10px; /* Fixed position from the left */
+}
+
+.percentage {
+    /* Percentage display */
+    position: absolute;
+    right: 10px; /* Fixed position from the right */
+}
+
+.btn-custom {
+    border: 2px solid black;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 8px 12px; 
+    font-size: 16px;
+    width: 160px; 
+}
+
+.btn-download {
+    color: white;
+    background-color: black;
+}
+
+.btn-contact {
+    color: black;
+    background-color: white;
+}
+
+.btn-custom:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.btn-contact:hover {
+    color: white;
+    background-color: black;
+}
+
+.hero-img {
+    padding: 0 0 0 30px;
+    position: relative;
+    
+  }
+
+
+
+.hero-img:after {
+    content: "";
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+  }
+  
+  .section-padding {
+    padding: 100px 0;
+  }
+
+  .head{
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 20%;
+   margin-bottom: 30px;
+  }
+  
+
+/*services*/
+
+.services{
+  background-color:#F7F7F7;
+}
+
+
+  .services .item {
+  padding: 50px 20px;
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.services .item:hover .icon {
+  background: var(--mainColor);
+  color:var(--whiteColor);
+}
+.services .item .icon {
+  font-size: 30px;
+  margin-bottom: 20px;
+ 
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 5px 10px;
+
+}
+.services .item h6 {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
+.services .item p {
+  word-spacing: 2px;
+  font-size: 14px;
+}
+
+
+
+/* portfolio */
+
+.stack{
+  width: 80px;
+  height: 80px;
+  transition: all 0.5s;
+}
+.card i{
+  transition: all 0.5s;
+}
+.card:hover .stack{
+  background-color: var(--mainColor);
+}
+.card:hover i{
+  color: #fff;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: transparent;
+  color: var(--mainColor);
+  text-decoration: underline   #1C1C1C;
+  font-weight: 700;
+}
+.nav-pills .nav-link.active::after{
+  content: "";
+  font-weight: 700;
+  position: absolute;
+  top: 75%;
+  width: 80%;
+  left: 10%;
+  height: 2px;
+  animation: width 0.5s ease-out;
+}
+
+.nav-link:focus, .nav-link:hover{
+  color: var(--mainColor);
+}
+.nav{
+  --bs-nav-link-color: var(--mainColor);
+}
+
+.stack-small{
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background-color: var(--mainColor);
+  border: solid var(--mainColor) 1px;
+}
+.stack-small:hover{
+  background-color: #fff;
+}
+.stack-small:hover i{
+  color: var(--mainColor);
+}
+.stack-small i{
+  color: #fff;
+}
+#portfolio .inner{
+  overflow: hidden;
+}
+#portfolio .content h4{
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 0.5s;
+}
+
+#portfolio .content .icons{
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 0.5s;
+}
+#portfolio .inner:hover .icons{
+  z-index: 99;
+  opacity: 1;
+  top: 50%;
+}
+#portfolio .inner:hover .content h4
+{   
+  opacity: 1;
+  z-index: 99;
+  top: 40%;
+}
+#portfolio .overlay{
+  background-color: rgb(253, 253, 253,0.9);
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  opacity: 0; 
+  transition: all 0.5s;
+
+}
+#portfolio .inner:hover .overlay{
+  opacity: 1;
+  top: 5px;
+}
+    
+
+      .p-client{
+        max-width: 700px;
+        margin: auto;
+        font-style: italic;
+    }
+    .carousel-indicators [data-bs-target] {
+        all:unset;
+        width: 15px;
+        opacity: 0.7;
+        height: 5px;
+        background-color: var(--mainColor);
+        margin-inline:2px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        cursor: pointer;
+    }
+    .carousel-indicators .active {
+        opacity: 1;
+        width: 20px;
+    }
+    .carousel-image{
+        width: 100px ;
+    }
+
+
+
+    .numbers .icon {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+      .numbers h3 {
+        font-weight: 900;
+        margin-bottom: 15px;
+      }
+      .numbers p {
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+
+
+      .contact-section {
+        background: #fff;
+        padding: 40px 0;
+        text-align: center;
+      }
+      
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      
+      .contact-header h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      .contact-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+      }
+      
+      .info-item {
+        width: 30%;
+      }
+      
+      .info-item .icon {
+        margin-bottom: 10px;
+      }
+      
+      .info-item h3 {
+        font-size: 20px;
+        color: #333;
+      }
+      
+      .info-item p {
+        color: #666;
+      }
+      
+      .contact-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      input, textarea {
+        padding: 10px;
+        width: 100%;
+      }
+      
+      button {
+        background-color: #000;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      
