@@ -254,7 +254,7 @@
       <div class="container w-75 m-auto py-5">
           <div class="d-flex justify-content-center">
 
-            <div class="head mx-auto ">
+            <div class="head mx-auto  text-center  ">
               <h3>Portfolio.</h3>
             </div>
           
@@ -582,46 +582,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <section class="client bg-light py-5" id="client">
+  <section class="client bg-light py-5 " id="client">
     <div class="container py-5">
-      <div class="title text-center pb-5">
-        <h2 class = "text-black fw-bold">Testimonials.</h2>
+    
+      <div class="head-Testimonials mx-auto  text-center  ">
+        <h3>Testimonials.</h3>
       </div>
       <div
         id="carouselExampleIndicators"
@@ -660,7 +625,7 @@
                 class="d-block my-2  rounded-circle m-auto carousel-image"
                 alt="..."
               />
-              <p class="text-muted p-client w-75 m-auto">
+              <p class="text-muted p-client w-100 m-auto">
                 "Lorem Ipsum has been the industry's standard dummy text ever
                 since the when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book."
@@ -721,7 +686,7 @@
         <div class="col-md-3">
           <div class="item">
             <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
-            <h3 class="counter">850</h3>
+            <h3 class="counter" data-target="850">0</h3>
             <p>Happy Customers</p>
           </div>
         </div>
@@ -729,7 +694,7 @@
         <div class="col-md-3">
           <div class="item">
             <span class="icon"><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
-            <h3 class="counter">230</h3>
+            <h3 class="counter" data-target="230">0</h3>
             <p>Complete Projects</p>
           </div>
         </div>
@@ -737,7 +702,7 @@
         <div class="col-md-3">
           <div class="item">
             <span class="icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
-            <h3 class="counter">9450</h3>
+            <h3 class="counter" data-target="9450">0</h3>
             <p>Lines Of Code</p>
           </div>
         </div>
@@ -745,7 +710,7 @@
         <div class="col-md-3">
           <div class="item">
             <span class="icon"><i class="fa fa-cloud-download" aria-hidden="true"></i></span>
-            <h3 class="counter">780</h3>
+            <h3 class="counter"  data-target="780">0</h3>
             <p>Files Downloaded</p>
           </div>
         </div>
@@ -760,24 +725,24 @@
 
   
    <!-- contact -->
-   <section id="contact" class="contact-section">
+   <section id="contact" class="contact-section d-flex">
     <div class="container">
       <div class="contact-header">
         <h2>Contact Us.</h2>
       </div>
       <div class="contact-info">
         <div class="info-item">
-          <div class="icon"><img src="address-icon.png" alt="Address Icon"></div>
+          <span class="icon"><i class="fa fa-laptop" aria-hidden="true"></i></span>
           <h3>Address</h3>
           <p>6834 Hollywood Blvd - Los Angeles CA</p>
         </div>
         <div class="info-item">
-          <div class="icon"><img src="email-icon.png" alt="Email Icon"></div>
+          <span class="icon"><i class="fa fa-laptop" aria-hidden="true"></i></span>
           <h3>Email</h3>
           <p>Support@website.com</p>
         </div>
         <div class="info-item">
-          <div class="icon"><img src="phone-icon.png" alt="Phone Icon"></div>
+          <span class="icon"><i class="fa fa-laptop" aria-hidden="true"></i></span>
           <h3>Phone</h3>
           <p>+20 010 2517 8918</p>
         </div>
@@ -809,5 +774,30 @@
 
        });
      </script>
+   <script>
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;  
+    
+    counters.forEach(counter => {
+    const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    
+    
+    const inc = target / speed;
+    
+    if (count < target) {
+     
+    counter.innerText = Math.ceil(count + inc);
+   
+    setTimeout(updateCount, 1);
+    } else {
+    counter.innerText = target;
+    }
+    };
+    
+    updateCount();
+    });
+    </script>
 </body>
 </html>
